@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,600;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:root {
+  --bg1: #223344;
+}
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+}
+
+/*session-home-----------------------------------------------------------*/
+
+.session-home{
+background-image: url("./images/desktop/image-header.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+.session-home__content{
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding-top: 40px;
+
+	
+}
+.session-home__content__title{
+	font-size: 50px;
+	font-family: 'Fraunces', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 30px;
+}
+
+
+.header {
+  display: flex;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 100px;
+  width: 100%;
+  z-index: 12000;
+  transition: 0.6s;
+
+  padding-top: 40px;
+}
+#logo {
+  position: relative;
+  width: 100px;
+  height: 100%;
+  z-index: 12000;
+}
+#logo #img-logo{
+  width: 100%;
+  height: 65px;
+  padding-top: 10px;
+}
+#menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 20px;
+
+}
+#menu a {
+  text-decoration: none;
+  color: white;
+
+  padding: 10px 20px;
+  border-radius: 28px;
+  font-family: 'Barlow',sans-serif;
+  font-weight: 600;
+}
+#menu a:hover{
+	background-color: rgb(250,250,250,.4);
+
+}
+#menu #link_contact{
+  display: block;
+  text-transform: uppercase;
+  background: white;
+  color: black;
+  font-family: 'Fraunces',sans-serif;
+
+}
+#menu #link_contact:hover{
+	background-color: rgb(250,250,250,.4);
+	color:white;
+}
+#btn-mobile {
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #btn-mobile {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    z-index: 12000;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  #hamburger {
+    display: white;
+    border-top: 4px solid white;
+    width: 30px;
+    height: 50px;
+    transition: 0.6s;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 30px;
+    background: white;
+    margin-top: 5px;
+    transition: 0.6s;
+    position: relative;
+
+  }
+  /*.active-menu-mobile > #btn-mobile > #hamburger {
+    border-top-color: transparent;
+  }
+  .active-menu-mobile > #btn-mobile > #hamburger::after {
+    transform: rotate(-135deg);
+    top: -9px;
+  }
+  .active-menu-mobile > #btn-mobile > #hamburger::before {
+    transform: rotate(135deg);
+  }*/
+  .header {
+    position: relative;
+  }
+  #menu {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    width: 0%;
+    top: 80px;
+    right: 10%;
+    background: white;
+    height: 0px;
+    overflow-y: hidden;
+    z-index: 1000;
+    transition: 0.6s;
+
+  }
+  .active-menu-mobile #menu {
+    height: auto;
+    width: 80%;
+    right: 10%;
+    padding-top: 60px;
+    visibility: visible;
+    overflow-y: auto;
+
+  }
+  #menu li {
+    width: 100%;
+    text-align: center;
+    padding: 20px 30%;
+  }
+  #menu li a {
+  	display: inline;
+   color: hsl(212, 27%, 19%);
+  }
+  #menu #link_contact{
+  	background-color: hsl(51, 100%, 49%);
+  }
+  #li-home {
+    display: none;
+  }
+}
+
+/*SessionServicess -----------------------------------*/
+.gren{
+color: hsl(167, 40%, 24%);
+
+}
+.blue{
+color:hsl(198, 62%, 26%);
+}
+.session-servicess{
+height: auto;
+}
+.session-servicess__flex-container{
+	display: flex;
+	justify-content: space-between;
+
+	flex-wrap: wrap;
+
+}
+.session-servicess__flex-item{
+
+	height: 500px;
+	flex-basis: 50%;
+	
+	padding: 100px;
+
+
+}
+.flex-item__title{
+font-family: 'Fraunces',sans-serif;
+font-size: 40px;
+padding-bottom: 40px;
+}
+.flex-item__text{
+	font-size: 18px;
+	font-weight: bold;
+	color: hsl(213, 9%, 39%);
+}
+.flex-item__a{
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Fraunces',sans-serif;
+	margin-top: 40px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.session-servicess__flex-img{
+	height: 500px;
+	flex-basis: 50%;
+
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+
+
+}
+.flex-img__text{
+	position: relative;
+	
+	width: 320px;
+
+	margin:0 auto;
+	margin-top: 280px;
+
+	text-align: center;
+}
+.flex-img__text .flex-item__title{
+	font-size: 25px;
+
+
+}
+
+@media(max-width: 840px){
+	/*.flex-container{
+		flex-direction: column;
+	}*/
+	.session-servicess__flex-img{
+	min-width:100%;
+	flex-basis: 100%;
+}
+.session-servicess__flex-item{
+
+		min-width:100%;
+	flex-basis: 100%;
+	padding: 40px 10%;
+	
+
+}
+}
+@media(max-width: 500px){
+	.flex-item__title{
+
+
+
+}
+}
+
+/*session textimonials*/
+.session-textimonials{
+padding: 100px 0;
+
+}
+.session-textimonials__title{
+text-transform: uppercase;
+color: hsl(213, 9%, 39%); 
+font-size: 18px;
+font-family: 'Fraunces',sans-serif;
+text-align: center;
+width: 100%;
+}
+
+.textimonials{
+	padding-top: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap:70px;
+}
+.textimonial{
+	width: 350px;
+	text-align: center;
+}
+/*@media(max-width: 450px){
+.textimonial{
+width: 100%;
+background-color: red;
+}
+}*/
+
+.textimonial-img{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+
+	}
+.textimonial-img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	
+	}																																																												/**/
+.textimonial p{
+padding:30px;
+font-family: "Fraunces",sans-serif;
+font-size: 18px; 
+}
+.textimonial__name{
+color: black;
+font-family: "Fraunces",sans-serif;
+font-size: 18px;
+font-weight: bold;
+
+}
+.textimonial__pro{
+}
+
+/*session gallery*/
+
+.gallery{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.gallery img{
+
+width: 25%;
+	height: 400px;
+}
+@media(max-width:530px ){
+.gallery img{
+
+	width: 50%;
+	height: 200px;
+}	
+}
+/*footer*/
+
+.footer{
+	padding-top: 100px;
+	text-align: center;
+	height: 320px;
+	background-color: hsl(167, 44%, 70%);
+}
+.footer h3{
+	color: hsl(166, 47%, 30%);
+	font-weight: bold;
+	font-size: 25px;
+	font-family: "Fraunces",sans-serif;
+}
+.footer nav{
+	padding-top: 20px;
+}
+.footer nav a{
+	text-decoration: none;
+	color: hsl(168, 34%, 41%);
+	font-weight: bold;
+	display: inline-block;
+	padding: 0px 15px;
+}
+.footer nav img{
+padding: 0 15px;
+}
