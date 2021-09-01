@@ -22,16 +22,16 @@ function toogleMenu() {
           id="btn-mobile"><span id="hamburger"> </span></button>
           <ul id="menu">
              <li >
-              <a >About</a>
+              <a href="#">About</a>
             </li>
              <li >
-              <a >Services</a>
+              <a href="#">Services</a>
             </li>
              <li >
-              <a >Projects</a>
+              <a href="#">Projects</a>
             </li>
              <li >
-              <a id="link_contact">contact</a>
+              <a href="#" id="link_contact">contact</a>
             </li>
           </ul>
         </nav>
